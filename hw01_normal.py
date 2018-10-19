@@ -24,17 +24,9 @@ print (abs(list2))
 # Решите задачу, используя только две переменные.
 
 
-a = int(input("Введите целое число: а "))
-b = int(input("Введите целое число: b "))
-if a > b:
-    a = b
-    b = a
-else:
-    b = a
-    a = b
-
-print (a)
-print (b)
+a = int(input("Введите целое число а: "))
+b = int(input("Введите целое число b: "))
+print("a = ", b, "b = ", a)
 
 
 
