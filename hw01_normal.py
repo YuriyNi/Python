@@ -26,7 +26,8 @@ print (abs(list2))
 
 a = int(input("Введите целое число а: "))
 b = int(input("Введите целое число b: "))
-print("a = ", b, "b = ", a)
+a,b = b,a
+print("a = ", a, "b = ", b)
 
 
 
@@ -52,7 +53,7 @@ elif d == 0:
     x1 = (-b + math.sqrt (d))/2*a
     print ("x1=",x1)
 elif d > 0:
-    x1 = (-b + math.sqrt(d)) / 2 * a
+    x1 = (-b + math.sqrt(d)) / 2*a
     x2 = (-b -(math.sqrt(d)))/2*a
     print ("x1=",x1 , "x2=",x2)
 
