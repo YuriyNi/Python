@@ -32,9 +32,11 @@ for i in list:
 
 
 
-dict_number = {"01": "Первое", "02": "Второе", "03": "Третье", "04": "Четвертое", "05": "Пятое", "06": "Шестое"}
-dict_month = {"01": "Января", "02" : "Февраля" }
-print (dict_number["01"],dict_month["01"])
+dict_numbers = { "02": "Второе"}
+dict_months = {"11": "Ноября"}
+dict_years = {"2013": "2013"}
+
+print (dict_numbers["02"],dict_months["11"], dict_years ["2013"] ,"года")
 
 
 
@@ -59,7 +61,13 @@ print (dict_number["01"],dict_month["01"])
 # выведите результаты
 
 lst = [1, 2, 4, 5, 6, 2, 5, 2]
-print (set(lst))
+lst_new = (set(lst))
+print (lst_new)
+
+lst2 = [1 , 2, 4, 5, 6, 2, 5, 2]
+
+
+
 
 
 
