@@ -52,3 +52,5 @@ for i in list:
     else:
         new_list.append (i*2)
 print (new_list)
+
+
