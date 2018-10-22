@@ -33,7 +33,7 @@ print ("4. {:>10}".format(list[3]))
 
 l = [1,2,3,4,5]
 l2 = [1,3,4,]
-l3 = list(set(l)-set(l2)) 
+l3 = list(set(l)-set(l2))
 print (l3)
 
 
