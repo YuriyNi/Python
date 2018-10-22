@@ -11,6 +11,18 @@ __author__ = 'Ни Юрий Олегович'
 # если такой корень вообще можно извлечь. Вывести результат
 # Пример: Дано: [2, -5, 8, 9, -25, 25, 4]   Результат: [3, 5, 2]
 
+import math
+lst = [2, -5, 8, 9, -25, 25, 4]
+lst_new = []
+x = int()
+for i in lst:
+    if math.sqrt(i) == x
+        lst_new.append(i)
+
+
+
+
+
 """
 
 import math
@@ -53,15 +65,14 @@ print (dict_numbers["02"],\
 # для получения случайного числа используйте функцию randint() модуля random
 # выведите созданный список
 
-
+"""
 import random
 n = int(input('введите количество случайных элементов в списке: '))
 lst = []
 for el in range(n):
     lst.append(random.randint(-100, 100))
 print(lst)
-
-
+"""
 
 
 
