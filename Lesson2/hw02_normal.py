@@ -66,9 +66,14 @@ print (dict_numbers["02"],dict_months["11"], dict_years ["2013"] ,"года")
 
 lst = [1, 2, 4, 5, 6, 2, 5, 2]
 lst_new = (set(lst))
-print (lst_new)
+print (list(lst_new))
 
 lst2 = [1 , 2, 4, 5, 6, 2, 5, 2]
+lst2_new = []
+for i in lst2:
+    if lst2.count(i) == 1:
+        lst2_new = [i]
+        print (lst2_new)
 
 
 
