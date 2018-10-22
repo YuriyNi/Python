@@ -36,7 +36,9 @@ dict_numbers = { "02": "Второе"}
 dict_months = {"11": "Ноября"}
 dict_years = {"2013": "2013"}
 
-print (dict_numbers["02"],dict_months["11"], dict_years ["2013"] ,"года")
+print (dict_numbers["02"],\
+       dict_months["11"],\ 
+       dict_years ["2013"] ,"года")
 
 """
 
@@ -50,24 +52,20 @@ print (dict_numbers["02"],dict_months["11"], dict_years ["2013"] ,"года")
 # Подсказка:
 # для получения случайного числа используйте функцию randint() модуля random
 # выведите созданный список
-"""
+
+
 import random
-n = int (input("Введите целое число"))
-l = list (range (n))
-for i in l:
-    i = random.randint(-100, 100)
-    print (l)
+n = int(input('введите количество случайных элементов в списке: '))
+my_list = []
+for el in range(n):
+    my_list.append(random.randint(-100, 100))
+print(my_list)
 
 
 
 
 
 
-
-
-
-
-print (l)
 
 
 
@@ -95,6 +93,6 @@ for i in lst2:
 print (lst2_new)
 
 
-
+"""
 
 
