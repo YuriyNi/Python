@@ -43,20 +43,31 @@ print (dict_numbers["02"],dict_months["11"], dict_years ["2013"] ,"года")
 
 
 
-"""
+
 
 # Задача-3: Напишите алгоритм, заполняющий список произвольными целыми числами
 # в диапазоне от -100 до 100. В списке должно быть n - элементов.
 # Подсказка:
 # для получения случайного числа используйте функцию randint() модуля random
 # выведите созданный список
-
+"""
 import random
-number = random.randint(-100, 100)  # значение от 20 до 35
-n = 0
+n = int (input("Введите целое число"))
+l = list (range (n))
+for i in l:
+    i = random.randint(-100, 100)
+    print (l)
 
-c = list(range(number))
-print (c)
+
+
+
+
+
+
+
+
+
+print (l)
 
 
 
@@ -80,7 +91,8 @@ lst2_new = []
 for i in lst2:
     if lst2.count(i) == 1:
         lst2_new.append(i)
-        print (lst2_new)
+
+print (lst2_new)
 
 
 
