@@ -56,10 +56,10 @@ print (dict_numbers["02"],\
 
 import random
 n = int(input('введите количество случайных элементов в списке: '))
-my_list = []
+lst = []
 for el in range(n):
-    my_list.append(random.randint(-100, 100))
-print(my_list)
+    lst.append(random.randint(-100, 100))
+print(lst)
 
 
 
