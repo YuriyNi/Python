@@ -17,7 +17,7 @@ import math
 lst = [2, -5, 8, 9, -25, 25, 4]
 lst_new = []
 for i in lst:
-    if i > 0  and int(math.sqrt(i)) and math.sqrt(i).is_integer():
+    if i > 0 and math.sqrt(i).is_integer():
         lst_new.append(math.sqrt(i))
 print(lst_new)
 
@@ -26,7 +26,7 @@ print(lst_new)
 # Ваша задача вывести дату в текстовом виде, например: второе ноября 2013 года.
 # Склонением пренебречь (2000 года, 2010 года)
 
-"""
+
 
 dict_numbers = { "02": "Второе"}
 dict_months = {"11": "Ноября"}
@@ -76,6 +76,5 @@ for i in lst2:
 print (lst2_new)
 
 
-"""
 
 
