@@ -11,50 +11,28 @@ __author__ = 'Ни Юрий Олегович'
 # если такой корень вообще можно извлечь. Вывести результат
 # Пример: Дано: [2, -5, 8, 9, -25, 25, 4]   Результат: [3, 5, 2]
 
+
+
 import math
 lst = [2, -5, 8, 9, -25, 25, 4]
 lst_new = []
-x = int()
 for i in lst:
-    if math.sqrt(i) == x
-        lst_new.append(i)
+    if i > 0  and int(math.sqrt(i)) and math.sqrt(i).is_integer():
+        lst_new.append(math.sqrt(i))
+print(lst_new)
 
-
-
-
-
-"""
-
-import math
-list = [2, -5, 8, 9, -25, 25, 4]
-for i in list:
-
-"""
-
-
-
-
-
-
-"""
 
 # Задача-2: Дана дата в формате dd.mm.yyyy, например: 02.11.2013.
 # Ваша задача вывести дату в текстовом виде, например: второе ноября 2013 года.
 # Склонением пренебречь (2000 года, 2010 года)
 
-
+"""
 
 dict_numbers = { "02": "Второе"}
 dict_months = {"11": "Ноября"}
 dict_years = {"2013": "2013"}
 
-print (dict_numbers["02"],\
-       dict_months["11"],\ 
-       dict_years ["2013"] ,"года")
-
-"""
-
-
+print (dict_numbers["02"],dict_months["11"],dict_years ["2013"] ,"года")
 
 
 
@@ -65,14 +43,13 @@ print (dict_numbers["02"],\
 # для получения случайного числа используйте функцию randint() модуля random
 # выведите созданный список
 
-"""
+
 import random
 n = int(input('введите количество случайных элементов в списке: '))
 lst = []
 for el in range(n):
     lst.append(random.randint(-100, 100))
 print(lst)
-"""
 
 
 
@@ -81,7 +58,9 @@ print(lst)
 
 
 
-"""
+
+
+
 
 # Задача-4: Дан список, заполненный произвольными целыми числами.
 # Получите новый список, элементами которого будут:
