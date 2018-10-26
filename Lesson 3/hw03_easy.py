@@ -25,5 +25,16 @@ print (res)
 
 
 
+s = input("Введите номер билета")
+def is_lucky(s):
+    t = tuple(map(int, s))
+    n = len(s) // 2
+    return sum(t[:n]) == sum(t[n:])
+
+print(is_lucky(s))
+
+
+
+
 
 
