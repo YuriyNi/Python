@@ -6,19 +6,27 @@
 # квадратами элементов исходного списка
 # [0, 1, 2, 3] --> [0, 1, 4, 9]
 
-list =[0, 1, 2, 3]
-list_new = [lambda i: i**2 for i in  list]
-print(list_new)
-
-
 """
-print (list(map(lambda x: x**2, [0, 1, 2, 3] )))
+ls1 = [0, 1, 2, 3]
+ls2 = list ((map(lambda x: x ** 2, ls1)))
+print (ls2)
+
+
+
+
+
+
 
 """
 
 # Задание-2:
 # Даны два списка фруктов.
 # Получить список фруктов, присутствующих в обоих исходных списках.
+
+fruit1 = [1,2,3]
+fruit2 = [2,3,4,5,]
+fruit_new = [fruit1+fruit2]
+print(fruit_new)
 
 
 # Задание-3:
