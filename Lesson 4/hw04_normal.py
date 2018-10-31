@@ -3,11 +3,19 @@
 # 1 или более символов в верхнем регистре.
 # # Т.е. из строки "mtMmEZUOmcq" нужно получить ['mt', 'm', 'mcq']
 # # Решить задачу двумя способами: с помощью re и без.
-
+"""
 import re
 l = ["mtMmEZUOmcq"]
 result = re.findall (r"mt","mtMmEZUOmcq" ) + re.findall (r"^[m]","mtMmEZUOmcq" ) + re.findall (r"mcq","mtMmEZUOmcq" )
 print(result)
+"""
+
+print (list("mtMmEZUOmcq"))
+
+
+
+
+
 
 
 # Задание-2:
