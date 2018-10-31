@@ -21,13 +21,13 @@ print (ls2)
 fruit1 = ["яблоко","банан","лемон"]
 fruit2 = ["морковь","банан","яблоко","слива"]
 
-fruit_new = [ list(fruit1+fruit2).remove(i) for i in list(fruit1+fruit2) if list(fruit1+fruit2).count(i) == 1 ]
+fruit_new = [ i for i in fruit1 if i in fruit2 ]
 
 print(fruit_new)
-
 """
 
 
+"""
 # Задание-3:
 # Дан список, заполненный произвольными числами.
 # Получить список из элементов исходного, удовлетворяющих следующим условиям:
@@ -37,5 +37,5 @@ print(fruit_new)
 
 lst1 = [1,2,3,4,5,6]
 lst2 = [ list (lst2).append(i) for i in lst1 if i // 2 and i > 0 and ]
-
+"""
 
