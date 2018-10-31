@@ -8,25 +8,24 @@
 
 """
 ls1 = [0, 1, 2, 3]
-ls2 = list ((map(lambda x: x ** 2, ls1)))
+ls2 = [ i ** 2 for i in ls1]
 print (ls2)
 
 
 
 
-
-
-
-"""
-
 # Задание-2:
 # Даны два списка фруктов.
 # Получить список фруктов, присутствующих в обоих исходных списках.
 
-fruit1 = [1,2,3]
-fruit2 = [2,3,4,5,]
-fruit_new = [fruit1+fruit2]
+fruit1 = ["яблоко","банан","лемон"]
+fruit2 = ["морковь","банан","яблоко","слива"]
+
+fruit_new = [ list(fruit1+fruit2).remove(i) for i in list(fruit1+fruit2) if list(fruit1+fruit2).count(i) == 1 ]
+
 print(fruit_new)
+
+"""
 
 
 # Задание-3:
@@ -35,4 +34,8 @@ print(fruit_new)
 # + Элемент кратен 2
 # + Элемент неотрицательный
 # + Элемент не кратен 3
+
+lst1 = [1,2,3,4,5,6]
+lst2 = [ list (lst2).append(i) for i in lst1 if i // 2 and i > 0 and ]
+
 
