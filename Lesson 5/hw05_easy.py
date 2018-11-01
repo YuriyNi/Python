@@ -9,20 +9,22 @@
 # И второй скрипт, удаляющий эти папки.
 
 import os
+"""
+dir_many = ("dir_1","dir_2","dir_3","dir_4","dir_5","dir_6","dir_7","dir_8","dir_9")
+for dir1 in dir_many:
+    os.makedirs (os.path.join (dir1))
 
-dir_path = os.path.join (os.getcwd(), "dir_1", "dir_2", "dir_3")
-try:
-    os.mkdir(dir_path)
-except FileExistsError:
-    print("Така дир уже существует")
 
 
 """
+dir_many = ("dir_1","dir_2","dir_3","dir_4","dir_5","dir_6","dir_7","dir_8","dir_9")
+for dir1 in dir_many:
+    os.rmdir (os.path.join (dir1))
+ 
 
-dir_path = os.path.join (os.getcwd(), "NEW DIR"  )   
-os.rmdir(dir_path)   # Удаление директории
 
-"""
+
+
 
 
 
@@ -37,4 +39,10 @@ print(os.listdir(dir_path))
 """
 # Задача-3:
 # Напишите скрипт, создающий копию файла, из которого запущен данный скрипт.
+"""
 
+
+
+shutil.copyfile (dir_path, dir_path1 )
+
+"""
