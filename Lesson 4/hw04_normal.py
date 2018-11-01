@@ -8,10 +8,9 @@ import re
 l = ["mtMmEZUOmcq"]
 result = re.findall (r"mt","mtMmEZUOmcq" ) + re.findall (r"^[m]","mtMmEZUOmcq" ) + re.findall (r"mcq","mtMmEZUOmcq" )
 print(result)
-"""
+
 
 print (list("mtMmEZUOmcq"))
-
 
 
 
