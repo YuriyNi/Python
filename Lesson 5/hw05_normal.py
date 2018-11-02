@@ -15,6 +15,36 @@
 # и импортированные в данный файл из easy.py
 
 
+import os
+import sys
+
+_ = ("1.Перейти в папку" , "2.Просмотреть содержимое текущей папки", "3.Удалить папку", "4.Создать папку - make_dir")
+for i in _:
+    print(i)
+
+comands = input("Введите команду:")
+
+print('sys.argv = ', sys.argv)
+
+def print_help():
+    print("papka - Перейти в папку")
+    print("sodpapka - Посмотреть содержимое папки")
+    print("delpapka - Удалить папку")
+    print("mkdir <dir_name> - создание директории")
+
+
+
+
+do = {
+    "papka": print_help,
+    "sodpapka": sod_dir,
+    "delpapka": del_dir,
+    "mkdir": make_dir,
+
+
+
+
+
 
 
 
