@@ -38,7 +38,7 @@ print(os.listdir())
 """
 # Задача-3:
 # Напишите скрипт, создающий копию файла, из которого запущен данный скрипт.
-
+"""
 import os, shutil
 dir_new1 = os.path.join(os.getcwdb(),"Copy")
 try:
@@ -50,4 +50,20 @@ dir_new = os.path.join(os.getcwdb()
 
 shutil.copy2 (dir_new, dir_new1)
 
+"""
+# для задания normal
 
+def make_dir():
+    if not dir_name:
+        print("Необходимо указать имя директории вторым параметром")
+        return
+    dir_path = os.path.join(os.getcwd(), dir_name)
+    try:
+        os.mkdir(dir_path)
+        print('директория {} создана'.format(dir_name))
+    except FileExistsError:
+        print('директория {} уже существует'.format(dir_name))
+
+
+def sod_dir():
+    print(os.listdir())
