@@ -64,6 +64,3 @@ def make_dir():
     except FileExistsError:
         print('директория {} уже существует'.format(dir_name))
 
-
-def sod_dir():
-    print(os.listdir())
