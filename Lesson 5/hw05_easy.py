@@ -52,11 +52,9 @@ shutil.copy2 (dir_new, dir_new1)
 
 """
 # для задания normal
+import os
 
-def make_dir():
-    if not dir_name:
-        print("Необходимо указать имя директории вторым параметром")
-        return
+def make_dir(dir_name):
     dir_path = os.path.join(os.getcwd(), dir_name)
     try:
         os.mkdir(dir_path)
@@ -64,3 +62,10 @@ def make_dir():
     except FileExistsError:
         print('директория {} уже существует'.format(dir_name))
 
+
+def del_dir(del_name):
+    dir_path1 = os.path.join(os.getcwd(), del_name)
+    if os.rmdir(os.path.join(dir_path1)):
+        print('директория {} удалена'.format(del_name))
+    else:
+        print("Ошибка")
