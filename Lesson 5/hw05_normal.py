@@ -50,55 +50,7 @@ elif comands == "4":
         print("{} Дирректория создана".format(dir_name))
 
 
-"""
 
-def print_help():
-    print("papka - Перейти в папку")
-    print("sodpapka - Посмотреть содержимое папки")
-    print("delpapka - Удалить папку")
-    print("mkdir <dir_name> - создание директории")
-
-
-
-
-
-def - "Перейти в папку ????????????????"
-
-
-
-
-def sod_dir():
-    print(os.listdir())
-    return sod_dir()
-
-
-do = {
-    "papka": ,  #Перейти в папку
-    "sodpapka": sod_dir,
-    "delpapka": del_dir,
-    "mkdir": make_Dir,
-}
-
-try:
-    dir_name = sys.argv[2]
-except IndexError:
-    dir_name = None
-
-try:
-    key = sys.argv[1]
-except IndexError:
-    key = None
-
-
-if key:
-    if do.get(key):
-        do[key]()
-    else:
-        print("Задан неверный ключ")
-        print("Укажите ключ help для получения справки")
-
-
-"""
 
 
 
