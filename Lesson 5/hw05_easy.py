@@ -1,0 +1,71 @@
+
+
+
+
+
+# Задача-1:
+# Напишите скрипт, создающий директории dir_1 - dir_9 в папке,
+# из которой запущен данный скрипт.
+# И второй скрипт, удаляющий эти папки.
+"""
+import os, shutil
+
+dir_many = ("dir_1","dir_2","dir_3","dir_4","dir_5","dir_6","dir_7","dir_8","dir_9")
+for dir1 in dir_many:
+    os.makedirs (os.path.join (dir1))
+
+
+"""
+"""
+dir_many = ("dir_1","dir_2","dir_3","dir_4","dir_5","dir_6","dir_7","dir_8","dir_9")
+for dir1 in dir_many:
+    os.rmdir (os.path.join (dir1))
+"""
+
+
+
+
+
+
+
+
+
+
+# Задача-2:
+# Напишите скрипт, отображающий папки текущей директории.
+"""
+print(os.listdir())
+"""
+# Задача-3:
+# Напишите скрипт, создающий копию файла, из которого запущен данный скрипт.
+"""
+import os, shutil
+dir_new1 = os.path.join(os.getcwdb(),"Copy")
+try:
+    os.mkdir(dir_new1)
+
+except FileExistsError:
+    print("Такая Дир уже есть")
+dir_new = os.path.join(os.getcwdb()
+
+shutil.copy2 (dir_new, dir_new1)
+
+"""
+# для задания normal
+import os
+
+def make_dir(dir_name):
+    dir_path = os.path.join(os.getcwd(), dir_name)
+    try:
+        os.mkdir(dir_path)
+        print('директория {} создана'.format(dir_name))
+    except FileExistsError:
+        print('директория {} уже существует'.format(dir_name))
+
+
+def del_dir(del_name):
+    dir_path1 = os.path.join(os.getcwd(), del_name)
+    if os.rmdir(os.path.join(dir_path1)):
+        print('директория {} удалена'.format(del_name))
+    else:
+        print("Ошибка")
