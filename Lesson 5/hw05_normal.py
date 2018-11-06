@@ -27,7 +27,6 @@ for _ in main:
     print(_)
 
 
-
 comands = input("Введите команду:")
 
 if comands == "1":
