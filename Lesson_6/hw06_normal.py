@@ -18,9 +18,9 @@
 
 class person:
    def __init__(self, name, surname, L_name):
-       self.name = name
-       self.surname = surname
-       self.L_name = L_name
+       self._name = name
+       self._surname = surname
+       self._L_name = L_name
 
        @property
        def full_name(self):
@@ -31,7 +31,44 @@ class subject:
     def __init__(self, name):
         self.name = name
 
+
+class teacher(person):
+    def __init__(self, name, surname, L_name, subject):
+        person.__init__(self, name, surname, L_name)
+        self.subject = subject
+
+class student (person):
+    def __init__(self, name, surname, L_name, mother, father):
+        person.__init__(self, name, surname, L_name)
+        self.mother = mother
+        self.father = father
+
+    def get_parents(self):
+        return [self.mother.full_name, self.father.full_name]
+
+class Class:
+    def __init__(self, number, char):
+        self.number = number
+        self.char = char
+        self.teachers = []
+        self.students = []
+
+    @property
+    def name (self):
+        return "{}{} {}".format(self.number, self.char)
+
+    def add_teacher (self, *args):
+        for a in args:
+            self.teachers.append(a)
+
+    def add_student (self, *args):
+        for a in args:
+            self.students.append(a)
+
+
+class School:
     
+
 
 
 
