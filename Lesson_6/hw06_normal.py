@@ -67,7 +67,28 @@ class Class:
 
 
 class School:
-    
+    def __init__(self):
+        self.classes = []      #список классов
+
+    def add_classes (self, *args):
+        for a in args
+            self.classes.append(a)
+
+# создаем метод вывести список классов
+    def get_classes (self):
+        return [x.name for x in self.classes]
+
+# создаем метод вывести список учеников
+    def get_students (self, classname):
+        students = [x.students for x in self.classes if x.name == classname]
+        return [el.full_name for x in classes[0].teacher]
+
+# создаем метод получить предметов для ученика
+    def get_subjects (self, studentname):
+        classes = [x for x in self.classes if studentname in [y.full_name for y in x.students]]
+        return [x.subject.name for x in classes[0].teachers]
+
+# создаем метод получить родителей
 
 
 
