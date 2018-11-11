@@ -16,18 +16,33 @@
 # 4. Узнать ФИО родителей указанного ученика
 # 5. Получить список всех Учителей, преподающих в указанном классе
 
-class schoollboy:
-   def __init__(self, name, surname, class_, subject):
+class person:
+   def __init__(self, name, surname, L_name):
        self.name = name
        self.surname = surname
-       self.class_ = class_
-       self.subject = subject
-       
+       self.L_name = L_name
+
+       @property
+       def full_name(self):
+           return " {}{} {}".format(self.name, self.surname, self.L_name)
 
 
-class parents:
-    def __init__(self, name, surname, children)
+class subject:
+    def __init__(self, name):
+        self.name = name
+
+    
 
 
 
-class teacher:
+
+
+
+
+
+
+
+#Children = person()
+
+
+
