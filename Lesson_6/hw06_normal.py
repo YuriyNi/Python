@@ -89,6 +89,19 @@ class School:
         return [x.subject.name for x in classes[0].teachers]
 
 # создаем метод получить родителей
+    def get_parents (self, studentname):
+        # Список всех учеников в классе выбранного ученика
+        class_students = [x.students for x in self.classes if studentname in [y.full_name for y in x.students]]
+
+        #доступ к выбранному ученику
+        students = [x for x in class_students[0] if studentname == x.full_name]
+        #доступ к его родителям
+        return students[0].get_parents()
+    def get_teachers (self, classname):
+        teachers = [ x.teachers for x in self.classes if x.name == classname]
+        return [x.full_name for x in teachers[0]]
+
+
 
 
 
