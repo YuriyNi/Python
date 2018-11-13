@@ -57,3 +57,38 @@
 модуль random: http://docs.python.org/3/library/random.html
 
 """
+
+import random
+def soft_to_max(origin_list, start, end):
+    for i in range(end, start, end, -1):
+        for j in range(start , i):
+            if origin_list[j] > origin_list[j+1]:
+                origin_list[j], origin_list[j+1] = origin_list[j+1] , origin_list [j]
+# карточка
+class Card():
+    def __init__(self):
+        # Количество строк в карточке
+        self._row_count = 3
+        # кол-во столбцов в карточке
+        self._column_count = 9
+        # кол-во необходимых чисел в строке
+        self._number_in_row_count = 5
+        # создаем список из 15 чисел с нумерацией от 1 до 91
+        self._numbers = random.sample(range(1,91),15)
+        # Кол-во вытащенных боченков
+        self._kegs_count = 15
+        # список позиций (0-8) в карточке для расстоновки чисел
+        self._distribution_row = list()
+        #  Перебираем каждую из трех строчек (i = 0,1,2)
+        for i range(self._row_count):
+            print(self._numbers_in_row_count * i)
+            # вызываем функцию сортировки чисел карточки по возрастания
+            # передаем в функцию 15 чисел карточки
+            # указываем что сортируем первые пять чисел карточки, потом вторые пять, потом третьи пять
+            # self._number_in_row_count * i = 0
+            # self._number_in_row_count * (i+1) - 1 = 4 итд
+            sort_to_max (self._numbers, self._number_in_row_count * i, self._number_in_row_count *(i+1)-1)
+            # добавляем позиции чисел в карточке
+            # позиции от 0 до 8, добавляем по 5 позиций на каждом шаге цикла (при переходе на очередную строку)
+            self._distribution_row += random.sample(range(self._column_count), self._number_in_row_count)
+
