@@ -80,7 +80,7 @@ class Card():
         # список позиций (0-8) в карточке для расстоновки чисел
         self._distribution_row = list()
         #  Перебираем каждую из трех строчек (i = 0,1,2)
-        for i range(self._row_count):
+        for i in range(self._row_count):
             print(self._numbers_in_row_count * i)
             # вызываем функцию сортировки чисел карточки по возрастания
             # передаем в функцию 15 чисел карточки
@@ -92,3 +92,22 @@ class Card():
             # позиции от 0 до 8, добавляем по 5 позиций на каждом шаге цикла (при переходе на очередную строку)
             self._distribution_row += random.sample(range(self._column_count), self._number_in_row_count)
 
+#рисуем карточку
+    def __str__(self):
+         card = " "
+         num_index = 0
+         for row in range (self._row_count):
+             for col in range(self._column_count):
+                 if col in self._distribution_row[self._number_in_row_count * row : self._number_in_row_count * (row + 1)]:
+                     card += " " * (2 - len(str(self._numbers[num_index]))) + str (self.numbers[num_index]) + " "
+                     num_index += 1
+                 else:
+                     card += " " * 3
+             card += " "  *3
+         return card
+
+
+#  вызываем функцию зачеркивания числа в карточке
+#  передаем бочонок - число (1-90)
+
+    def 
