@@ -119,6 +119,8 @@ class Card():
         self._kegs_count -= 1
         # Если все правильно возвращаем True
         return True
+
+    
 # создаем экземпляр карточки для игрока
 my_card = Card()
 # создаем экземпляр карточки для компьютера
@@ -161,3 +163,13 @@ while my_card._kegs_count > 0 and comp_card._kegs_count > 0 and do != "q":
     do =  "q"
 
     step += 1
+
+
+if my_card._kegs_count == 0:
+    print("вы выиграли")
+
+elif comp_card._kegs_count == 0:
+    print("вы проиграли")
+
+elif my_card._kegs_count == 0 and comp_card._kegs_count == 0:
+    print("ничья")
